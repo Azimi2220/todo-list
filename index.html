@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <!-- <p>Today we start the DOM and we should staudy hard.</p>
+    <p>Today we start the DOM and we should staudy hard.</p>
+    <p>Today we start the DOM and we should staudy hard.</p>
+    <p>Today we start the DOM and we should staudy hard.</p>
+    <p>Today we start the DOM and we should staudy hard.</p>
+    <p>Today we start the DOM and we should staudy hard.</p>
+    <p id="p1">Today we start the DOM and we should staudy hard.</p>
+   <p>Today we start the DOM and we should staudy hard.</p> -->
+    <!-- <p id="firstp">Today we start the DOM and we should staudy hard</p>
+    <p>Today we start the DOM and we should staudy hard2</p>
+    <p>Today we start the DOM and we should staudy hard3</p>
+    <h1 id="heading1">Salaam Jahan</h1> -->
+    <!-- <script src="/index.js"></script> -->
+    <!-- <h1 id="new">Hi i come here</h1> -->
+    <!-- <button id="button">Click</button> -->
+    <!-- <script type="module" src="/index.js"></script> -->
+    <!-- <script type="module" src="/new.js"></script> -->
+    <img src="/photo_2024-07-24_19-09-00.jpg" alt="photo" id="img" />
+    <div class="parent">
+      <h1 id="heading" onmouseover="this.style.backgroundColor='green'">
+        Salaam Jahan
+      </h1>
+    </div>
+
+    <input type="tex" />
+    <button>Click here to add</button>
+    <ul class="list"></ul>
+    <script>
+      
+      const input = document.querySelector("input");
+
+      const list = document.querySelector(".list");
+      const btn = document.querySelector("button");
+
+      function addNewTodo() {
+        const newItem = document.createElement("li");
+        const inputValue = input.value;
+        newItem.textContent = inputValue;
+        list.appendChild(newItem);
+
+        input.value = "";
+      }
+      btn.addEventListener("click", addNewTodo);
+
+      // const btn = document.getElementById("button");
+      // btn.addEventListener("click", () => (button.innerText = "Bye I go"));
+      // const button = document.getElementById("button");
+      // const parent = document.getElementsByClassName("parent");
+      // const oldDiv = document.getElementsByClassName("oldDiv");
+      // const newDiv = document.createElement("div");
+      // newDiv.textContent = "This is the new div that i created";
+      // parent.replaceChild(newDiv, oldDiv);
+      let image = document.getElementById("img");
+      image.setAttribute("width", "100px");
+
+    </script>
+  </body>
+</html>
